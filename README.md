@@ -17,3 +17,7 @@ kubectl label namespace mongodb-namespace istio-injection=enabled
 Once I delete all pods, when deployment tries to create pods, it ends up injecting the sidecar containers
 k -n mongodb-namespace delete pods --all 
 ```
+
+
+## Result [Traffic flow]
+![Alt text](resources/traffic-flow.png?raw=true "Title")
